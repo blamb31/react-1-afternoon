@@ -52,7 +52,7 @@ export default class FilterObject extends Component {
         <div className="puzzleBox filterObjectPB">
 
             <h4>Filter Object</h4>
-            <span className="puzzleText">{JSON.stringify(this.state.unFilteredArray)}</span>
+            <span className="puzzleText">Original: {JSON.stringify(this.state.unFilteredArray)}</span>
             <input className="inputLine" onChange={(event) => this.handleChange(event.target.value)} ></input>
             <button className="confirmationButton" onClick={() => this.filterObject(this.state.userInput)} >Filter</button>
             <span className="resultsBox filterObjectRB">Filtered: {JSON.stringify(this.state.filteredArray)}</span>
